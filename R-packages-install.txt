@@ -31,7 +31,7 @@ install.packages("Hmisc", dependencies = T)
 install.packages("tidyverse")
 
 #install all required packages together
-BiocManager::install(c("DESeq2", "ROntoTools", "QuaternaryProd", "pathview", "gage"))
+BiocManager::install(c("DESeq2", "BiocParallel", "ROntoTools", "QuaternaryProd", "pathview", "gage"))
 
 ##to use Stringtie with DESeq2
 ##install tximport package to convert from Stringtie output to DESeq2 input	
