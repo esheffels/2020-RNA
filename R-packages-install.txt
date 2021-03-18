@@ -1,0 +1,38 @@
+R packages install
+
+Command line
+
+Get config files for R packages dependencies:
+RCurl
+XML
+
+sudo apt-get update
+sudo apt-get install libcurl4-gnutls-dev
+sudo apt-get install libxml2-dev
+sudo apt-get install libssl-dev
+sudo R
+
+#in R
+#install Bioconductor install manager if not already installed
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+#install Bioconductor install manager if not already installed
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+#Install DESeq2 dependencies
+
+#Current Debian R version = 3.5. , current version of latticeExtra (0.6-29) requires Debian >= 3.6
+#install version 0.6-28 of latticeExtra with install_version from devtools
+install.packages("devtools")
+devtools::install_version("latticeExtra", version = "0.6-28")
+install.packages("Hmisc", dependencies = T)
+install.packages("tidyverse")
+
+#install all required packages together
+BiocManager::install(c("DESeq2", "ROntoTools", "QuaternaryProd", "pathview", "gage"))
+
+##to use Stringtie with DESeq2
+##install tximport package to convert from Stringtie output to DESeq2 input	
+##BiocManager::install("tximport")
