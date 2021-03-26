@@ -1,2 +1,4 @@
 # checkpoint files #
 *checkpoint*
+#RData files#
+*.RData
