@@ -1,0 +1,12 @@
+All cells have oncogenic KRAS G12C mutation
+SOS1 and SOS2 activate RAS (HRAS, NRAS, and KRAS)
+Hypothesis: combining inhibition of oncogenic RAS with inhibition/KO of SOS1 or SOS2 reduces oncogenic signals and rebound signaling, making combination treatment more effective than inhibiting RAS alone.
+
+Factors:
+CRISPR: NT=non-targeting (no gene KO), S1 = SOS1 KO, S2 =SOS2 KO
+MRTX = KRAS G12C inhibitor: True = KRASG12C (oncogene) inhibited
+BI = SOS1 inhibitor: True = SOS1 inhibited
+SHP2i: True = SHP2 (SOS interaction partner) inhibited (want to know if equivalent to SOS1 inhibition)
+Inhibition Status: combination of KO status and drug status, X=no drug (ex: MX = MRTX alone, MB = MRTX + BI, XS= SHP2i alone)
+Time Point: 0, 6, 72 hrs after adding drug
+Population: Each CRISPR done in two independent cell populations with two samples in each group of 4, so cells with CRISPR = NT and Population = A came from NT-A cell population
